@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+
+.block {
+    background: rgb(224, 224, 224);
+    width: 100%;
+}
+  
+a {
+    text-decoration: none;
+}
+
+.cards {
+    max-width: 900px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.person-card {
+    position: relative;
+    width: 49%;
+    height: 560px;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.person-tags {
+    height: 280px;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.tags {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    background: #F47621;
+    color: #fff;
+    padding: 10px 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info{
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    height: 250px;
+    background: #fff;
+}
+
+.wraper{
+    position: relative;
+    top: -25px;
+}
+
+.author-avatar {
+    position: absolute;
+    top: -20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.new-post {
+    float: right;
+    background: #ff3f3f;
+    color: #fff;
+    padding: 10px 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.common-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-name {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.genre-tags{
+    height: 50px;
+}
+
+.post-tittle {
+    height: 70px;
+}
+
+.post-tittle .tittle {
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+}
+
+@media(max-width: 768px){
+    .cards {
+        flex-flow: column wrap;
+        padding: 20px 0;
+    }
+    .person-card{
+        width: 100%;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+}
